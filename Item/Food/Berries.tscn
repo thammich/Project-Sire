@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqk13oo1aexxj"]
+
+[ext_resource type="Texture2D" uid="uid://bhrn18o4i3t3n" path="res://art/object_tileset.png" id="1_d6cto"]
+[ext_resource type="Script" path="res://Item/Food/Food.gd" id="2_r46aw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wb0b"]
+atlas = ExtResource("1_d6cto")
+region = Rect2(32, 16, 16, 16)
+
+[node name="Berries" type="Sprite2D"]
+texture = SubResource("AtlasTexture_3wb0b")
+script = ExtResource("2_r46aw")
+nutrition = 0.5
+foodType = 1

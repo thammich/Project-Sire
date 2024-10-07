@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2wtyvnltol1y"]
+
+[ext_resource type="Script" path="res://pawn.gd" id="1_subuj"]
+[ext_resource type="Texture2D" uid="uid://csk0em1faknnx" path="res://art/icon.svg" id="2_4icqe"]
+[ext_resource type="Script" path="res://PawnAI.gd" id="3_bs6n6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3h5ld"]
+radius = 8.0
+height = 16.0
+
+[node name="Pawn" type="CharacterBody2D"]
+script = ExtResource("1_subuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.116699, 0.116699)
+texture = ExtResource("2_4icqe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_3h5ld")
+
+[node name="PawnAI" type="Node" parent="."]
+script = ExtResource("3_bs6n6")
