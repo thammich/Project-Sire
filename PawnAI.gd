@@ -87,3 +87,10 @@ func StartCurrentSubTask(subTask):
 			
 		Task.TaskType.Eat:
 			currentAction = PawnAction.DoingSubTask
+
+# next up task stats + UI design start implementing
+# art design next  check google odc
+
+# start working on the triangle stats and UI use a progress bar?
+# put the code in either pawn or pawnAI or create a new node for it
+# fix the mass error terminate it
