@@ -94,3 +94,4 @@ func StartCurrentSubTask(subTask):
 # start working on the triangle stats and UI use a progress bar?
 # put the code in either pawn or pawnAI or create a new node for it
 # fix the mass error terminate it
+# touchpad compability? consider adding touchscreen and arrow controls 
